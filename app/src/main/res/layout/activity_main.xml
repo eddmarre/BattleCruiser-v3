@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainscreen" />
+
+    <TextView
+        android:id="@+id/PlayTextView"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="96dp"
+        android:text="Play"
+        android:textColor="#FF0000"
+        android:textSize="64sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score"
+        android:textSize="24sp"
+        android:id="@+id/HighScoreTextView"
+        android:textColor="#ffffff"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/VolumeControlImageView"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:background="#ffff"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="visible"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        tools:visibility="visible"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="424dp"
+        android:layout_height="248dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="156dp"
+        app:srcCompat="@drawable/title" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="251dp"
+        android:layout_height="136dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="80dp"
+        app:srcCompat="@drawable/startbutton" />
+<!--<ImageView
+    android:id="@+id/historyImageView"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="230dp"
+    android:layout_marginLeft="50dp"
+    android:src="@drawable/historybutton"/>-->
+
+
+</RelativeLayout>
